@@ -62,7 +62,7 @@ a{
 
 /*Req 5*/
 /*Add selector and rule here*/
-*{
+*:focus{
   border-style: dashed;
   border-width: 3px;
   border-color: #417243;
@@ -105,24 +105,23 @@ td{
 /*Req 6d*/
 
 /*Req 6e*/
-.tr:nth-child(1){
+tr:nth-child(even){
   background-color:#D1D1D1;
   text-align:center;
   border-color:#000000;
   border-width: 2px;
   border-style: solid;
-  border-bottom-left-radius: 10px;
-
+  
 }
 /*Req 6f*/
 
 
 /*Req 7*/
 table{
-    border: 2px solid #000000;
-    border-collapse: collapse;
-    margin: 0 auto;
-    border-top-right-radius: 25px;
+  border: 2px solid #000000;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border-top-right-radius: 25px;
     
 }
 
@@ -133,12 +132,12 @@ thead tr:first-child th:first-child{
 }
 
 /*Add selectors and rules here*/
-.colhead:first-child{
+thead .colhead:first-child{
   border-top-left-radius: 10px;
   padding: 20px; 
   
 }
-.colhead:last-child{
+.colhead:last-of-type{
   border-top-right-radius: 10px;
   padding: 20px;
   
