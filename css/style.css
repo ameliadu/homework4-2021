@@ -147,18 +147,15 @@ table{
 /*Add selectors and rules here*/
 thead .colhead:first-of-type{
   border-top-left-radius: 10px;
-  padding: 20px; 
   
 }
 
 thead .colhead:last-of-type{
   border-top-right-radius: 10px;
-  padding: 20px;
 
 }
 tbody .rowhead:eq(10):last-of-type{
   border-bottom-left-radius: 10px;
-  padding: 20px;
 }
 
 
@@ -171,7 +168,7 @@ table tbody tr td{
 
 table tr{
   border-bottom-left-radius: 10px;
-  padding: 20px;
+  border-style:solid;
 }
 
 
