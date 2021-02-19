@@ -73,11 +73,13 @@ a{
 td{
   text-align: center;
   vertical-align: top;
-  padding-top: 2px;
+  border-top: 2px, #000000;
   padding: 10px;
   margin: 0 auto;
   
 }
+
+  
 
 /*Req 6b*/
 .colhead{
@@ -95,57 +97,64 @@ td{
 }
 /*Req 6c*/
 .rowhead{
-  border-color:#000000;
-  border-width: 2px;
-  border-style: solid;
+  padding: 10px;
   vertical-align: middle;
-
+  text-align: center;
+  text-transform: uppercase;
+  border-top-color:#000000;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-left-color:#000000;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-right-color:#000000;
+  border-right-width: 2px;
+  border-right-style: solid;
 }
 
 /*Req 6d*/
+tr:nth-child(even){
+  background-color: transparent;
+  text-align:center;
+
+  
+}
 
 /*Req 6e*/
 tr:nth-child(even){
   background-color:#D1D1D1;
   text-align:center;
-  border-color:#000000;
-  border-width: 2px;
-  border-style: solid;
+
   
 }
 /*Req 6f*/
+tr.highlight:hover{
+  color: rgba(126,8,32,.25)
+}
 
 
 /*Req 7*/
 table{
-  border: 2px solid #000000;
-  border-collapse: collapse;
+  border-collapse: separate;
   margin: 0 auto;
-  border-top-right-radius: 25px;
-    
 }
 
-thead tr:first-child th:first-child{
-  border-top-left-radius: 10px;
-  padding: 20px; 
-  
-}
 
 /*Add selectors and rules here*/
-thead .colhead:first-child{
+thead .colhead:first-of-type{
   border-top-left-radius: 10px;
   padding: 20px; 
   
 }
-.colhead:last-of-type{
+
+thead .colhead:last-of-type{
   border-top-right-radius: 10px;
   padding: 20px;
-  
+
 }
-.rowhead:first-child{
-  border-top-left-radius: 10px;
-  border: 2px solid #000000;
-}
+
+
+
 
 /*Req 8*/
 footer{
