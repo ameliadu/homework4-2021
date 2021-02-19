@@ -28,10 +28,15 @@ body{
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
+  background-image: url(../images/pigeon-background.JPEG);
+  background-color: #DDDDDD;
   background-size: cover ;
   background-position: center;
 
   /*Req 1*/
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Andika",sans-serif;
 }
 
 h1{
@@ -39,55 +44,117 @@ h1{
   font-size: 2em;
 
   /*Req 2*/
+  line-height: 2;
+  text-align: center;
 }
 
 p{
   /*Req 3*/
+  padding-top: 15px;
 }
 
 a{
   /*Req 4*/
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration-style: wavy;
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
+*{
+  border-style: dashed;
+  border-width: 3px;
+  border-color: #417243;
+}
 
 
 /*Req 6a*/
 td{
+  text-align: center;
+  vertical-align: top;
+  padding-top: 2px;
+  padding: 10px;
+  margin: 0 auto;
   
 }
 
 /*Req 6b*/
 .colhead{
   color: #FFFFFF;
-
+  background-color: #7e0820;
+  padding: 10px;
+  width: 125px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  border-color:#000000;
+  border-width: 2px;
+  border-style: solid;
+  
 }
 /*Req 6c*/
 .rowhead{
+  border-color:#000000;
+  border-width: 2px;
+  border-style: solid;
+  vertical-align: middle;
 
 }
 
 /*Req 6d*/
+
 /*Req 6e*/
+.tr:nth-child(1){
+  background-color:#D1D1D1;
+  text-align:center;
+  border-color:#000000;
+  border-width: 2px;
+  border-style: solid;
+  border-bottom-left-radius: 10px;
+
+}
 /*Req 6f*/
 
 
 /*Req 7*/
 table{
     border: 2px solid #000000;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-top-right-radius: 25px;
+    
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
+  padding: 20px; 
+  
+}
 
 /*Add selectors and rules here*/
-
+.colhead:first-child{
+  border-top-left-radius: 10px;
+  padding: 20px; 
+  
+}
+.colhead:last-child{
+  border-top-right-radius: 10px;
+  padding: 20px;
+  
+}
+.rowhead:first-child{
+  border-top-left-radius: 10px;
+  border: 2px solid #000000;
+}
 
 /*Req 8*/
 footer{
   width:100%;
   background:#000000;
+  position: fixed;
   text-align:center;
   color: #FFFFFF;
+  height: 75px;
 }
 
