@@ -86,7 +86,7 @@ td{
   color: #FFFFFF;
   background-color: #7e0820;
   padding: 10px;
-  width: 125px;
+  min-width: 125px;
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
@@ -129,6 +129,7 @@ tr:nth-child(even){
 }
 /*Req 6f*/
 tr.highlight:hover{
+  opacity: .25;
   color: rgba(126,8,32,.25)
 }
 
@@ -152,6 +153,17 @@ thead .colhead:last-of-type{
   padding: 20px;
 
 }
+tbody .rowhead:eq(10):last-of-type{
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+}
+
+tbody tr td{
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-right-width: 2px;
+  border-right-color: #000000;
+}
 
 
 
@@ -165,6 +177,6 @@ footer{
   background-color:#000000;
   text-align:center;
   color: #FFFFFF;
-  height: 75px;
+  min-height: 75px;
 }
 
