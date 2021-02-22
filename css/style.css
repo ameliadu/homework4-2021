@@ -75,19 +75,14 @@ td{
   vertical-align: top;
   padding: 10px;
   margin: 0 auto;
-
-  
-}
-tr *{
   border-top-style:solid;
   border-top-width: 2px;
   border-top-color: #000000;
+
+  
 }
-tr td *{
-  border-right-style:solid;
-  border-right-width: 2px;
-  border-right-color: #000000;
-}
+
+
 
   
 
@@ -112,6 +107,9 @@ tr td *{
   border-right-style:solid;
   border-right-width: 2px;
   border-right-color: #000000;
+  border-top-style:solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
   
 }
 
